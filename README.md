@@ -4,8 +4,9 @@ stupidlySimpleGrid
 A very simple semnatic grid taking inspiration, or stealing from a few good sources.
 
   - Little to no extra markup
+  - Uses box-sizing.
   - Easy to use with media queries
-  - Little bits of media query and scss functions borrowed from zurb foundation - which is amazing by the way.
+  - Little bits of media query and scss functions borrowed from zurb foundation - which is amazing by the way, really you should head over there if you want a markup based grid and loads of other cool stuff to make your life easier!
 
 What-da fuk?
 ----
@@ -17,6 +18,19 @@ rowClear()
 row($clearBool, $gutter)
 column($width, $padding)
 
+```
+
+Some media query goodness(pinched from zurb foundation)
+
+```
+$large-up, $medium-up, $small-up etc, see the _fmqs.scss
+```
+
+A couple of useful queries to put in your @media (assign them to vars)
+
+```
+customRange($min, $max)
+customRangeHeight($min, $max)
 ```
 
 How do I use this?
@@ -42,6 +56,12 @@ header {
     @media #{$small-only}{
       @include column(100%, 0px);
     }
+    
+    $customHeight: customRangeHeight(0px 100px);
+    
+    @media #{$customHeight}{
+      //do something
+    }
 }
 
 aside {
@@ -58,5 +78,5 @@ aside {
 Version
 ----
 
-1.1
+1.2
 
