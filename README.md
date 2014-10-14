@@ -1,12 +1,13 @@
 stupidlySimpleGrid
 =========
 
-A very simple semnatic grid taking inspiration, or stealing from a few good sources.
+A very simple semnatic grid taking inspiration, or stealing, from a few good sources. You need scss for this.
 
   - Little to no extra markup
   - Uses box-sizing.
   - Easy to use with media queries
   - Little bits of media query and scss functions borrowed from zurb foundation - which is amazing by the way, really you should head over there if you want a markup based grid and loads of other cool stuff to make your life easier!
+  - As small a css footprint as i could manage, however im sure it can be done smaller/better (maybe version 2 ay?)
 
 What-da fuk?
 ----
