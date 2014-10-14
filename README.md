@@ -20,10 +20,10 @@ column($width, $padding)
 
 ```
 
-Some media query goodness(pinched from zurb foundation)
+Some media query goodness pinched from zurb foundation (see the _fmqs.scss)
 
 ```
-$large-up, $medium-up, $small-up etc, see the _fmqs.scss
+$large-up, $medium-up, $small-up, $large-only, $medium-only, $small-only, etc!
 ```
 
 A couple of useful queries to put in your @media (assign them to vars)
@@ -57,10 +57,10 @@ header {
       @include column(100%, 0px);
     }
     
-    $customHeight: customRangeHeight(0px 100px);
+    $customHeight: customRangeHeight(0px, 100px);
     
     @media #{$customHeight}{
-      //do something
+      //do something with the custom height!
     }
 }
 
