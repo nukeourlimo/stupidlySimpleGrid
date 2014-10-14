@@ -5,7 +5,6 @@ A very simple semnatic grid taking inspiration, or stealing from a few good sour
 
   - Little to no extra markup
   - Easy to use with media queries
-  - Home made, like a nice warm apple pie, dont put your todger in it though.
   - Little bits of media query and scss functions borrowed from zurb foundation - which is amazing by the way.
 
 What-da fuk?
@@ -37,12 +36,22 @@ article {
 }
 
 header {
-    @include column(75%)
+    @include column(75%);
+    
+    
+    @media #{$small-only}{
+      @include column(100%, 0px);
+    }
 }
 
 aside {
     @include column(25%)
+    
+    @media #{$small-only}{
+      @include column(100%, 10px);
+    }
 }
+
 ```
 
 
