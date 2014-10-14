@@ -1,5 +1,14 @@
 //super simple homemade grid with foundation css principles and semtantic idealologies - use box model with this.
 
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+}
+
 @mixin rowClear(){
 	display: block;
 		
