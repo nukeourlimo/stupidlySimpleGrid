@@ -1,0 +1,38 @@
+//super simple homemade grid with foundation css principles and semtantic idealologies - use box model with this.
+
+@mixin rowClear(){
+	display: block;
+		
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+//gutter and padding set in vars
+@mixin row($clear: false, $gut: $gutter) {
+	width: 100%;
+	max-width: $max-width;
+	clear: both;
+	margin: 0 auto 0 auto;
+	padding: 0 $gut 0 $gut;
+	min-height: 1px;
+
+	@if $clear {
+		@include rowClear();
+	}
+}
+
+//gutter and padding set in vars
+@mixin column($width, $pad: $padding){
+	display: block;
+	position:relative;
+	float: left;
+	width: $width;
+	padding: 0 $pad 0 $pad;
+}
