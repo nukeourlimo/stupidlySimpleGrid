@@ -27,7 +27,7 @@ Some media query goodness pinched from zurb foundation (see the _fmqs.scss)
 $large-up, $medium-up, $small-up, $large-only, $medium-only, $small-only, etc!
 ```
 
-A couple of useful queries to put in your @media (assign them to vars)
+A couple of useful queries to put in your @media I would assign them to vars which makes the media query nicer to read.
 
 ```
 customRange($min, $max)
