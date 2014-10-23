@@ -17,7 +17,7 @@ Three simple mixins
 ```
 rowClear()
 row($clearBool, $gutter)
-column($width, $padding)
+column($width, $padding, $centerBool)
 
 ```
 
@@ -79,5 +79,5 @@ aside {
 Version
 ----
 
-1.2
+1.3
 
