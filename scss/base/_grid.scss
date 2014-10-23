@@ -1,5 +1,4 @@
-//super simple homemade grid with foundation css principles and semtantic idealologies
-
+//super simple homemade grid with foundation css principles and semtantic idealologies - use box sizing with this.
 *,
 *:before,
 *:after {
@@ -38,10 +37,15 @@
 }
 
 //gutter and padding set in vars
-@mixin column($width, $pad: $padding){
+@mixin column($width, $pad: $padding, $center: false){
 	display: block;
 	position:relative;
 	float: left;
 	width: $width;
 	padding: 0 $pad 0 $pad;
+
+	@if $center {
+		margin: auto auto;
+		float: none;
+	}
 }
