@@ -28,7 +28,8 @@
 	max-width: $max-width;
 	clear: both;
 	margin: 0 auto 0 auto;
-	padding: 0 $gut 0 $gut;
+  padding-right: $gut;
+  padding-left: $gut;
 	min-height: 1px;
 
 	@if $clear {
@@ -42,7 +43,8 @@
 	position:relative;
 	float: left;
 	width: $width;
-	padding: 0 $pad 0 $pad;
+  padding-right: $pad;
+  padding-left: $pad;
 
 	@if $center {
 		margin: auto auto;
