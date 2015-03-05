@@ -1,11 +1,3 @@
-@mixin transition($prop, $timing, $ease, $delay) {
-
-  -webkit-transition: $prop $timing $ease $delay;  /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: $prop $timing $ease $delay;  /* Firefox 4-15 */
-  -o-transition: $prop $timing $ease $delay;  /* Opera 10.50–12.00 */
-  transition: $prop $timing $ease $delay;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
-}
-
 //used to hide menu items where that option is not availible.
 @function customRange($min, $max){
 	@return "#{$screen} and (min-width:#{lower-bound(($min, $max))}) and (max-width:#{upper-bound(($min, $max))})"
