@@ -1,10 +1,10 @@
 //Foundation Media Query Ranges
 //
 $small-range: (0em, 40em); //0 - 640
-$medium-range: (40.063em, 64em); //641 - 1023
-$large-range: (64.1em, 90em); //1024 - 1440
-$xlarge-range: (90.063em, 120em); //to infinity and beyond
-$xxlarge-range: (120.063em);
+$medium-range: (40.063em, 64em); //641 - 1024
+$large-range: (64.1em, 75em); //1025 - 1200
+$xlarge-range: (75.063em, 120em); //1201 - 1920
+$xxlarge-range: (120.063em); //1921 - infinity and just past infinity.
 
 $screen: "only screen";
 
@@ -25,3 +25,26 @@ $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max
 
 $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
 $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
+
+// TESTING NEW SET OF MEDIA QUERIES
+//
+$pmobile: (0px, 567px); //  Portrait mobile & mobile plus
+$lmobile: (568px, 767px); // Landscape mobile
+$ptablet: (768px, 1023px); // Portrait tablet
+$ltablet-laptop: (1024px, 1599px); // Landscape tablet & Laptop
+$desktop-screen: (1600px); // Desktop screens
+
+//$small-up: $screen;
+$port-mobile-only: "#{$screen} and (max-width: #{upper-bound($pmobile)})";
+
+//$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
+$land-mobile-only: "#{$screen} and (min-width:#{lower-bound($lmobile)}) and (max-width:#{upper-bound($lmobile)})";
+
+//$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
+$port-tablet-only: "#{$screen} and (min-width:#{lower-bound($ptablet)}) and (max-width:#{upper-bound($ptablet)})";
+
+//$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
+$tablet-laptop-only: "#{$screen} and (min-width:#{lower-bound($ltablet-laptop)}) and (max-width:#{upper-bound($ltablet-laptop)})";
+
+//$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
+$desktop-only: "#{$screen} and (min-width:#{lower-bound($desktop-screen)}) and (max-width:#{upper-bound($desktop-screen)})";
